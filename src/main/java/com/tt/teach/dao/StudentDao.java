@@ -23,4 +23,6 @@ public interface StudentDao {
 
     @Update("update student set loginPwd=#{loginPwd},studentName=#{studentName},phone=#{phone} where studentNo=#{studentNo}")
     int updateStudent(Student student);
+    @Select("select * from student where studentNo = #{studentNo}")
+    Student getStuByNo(Integer studentNo);
 }

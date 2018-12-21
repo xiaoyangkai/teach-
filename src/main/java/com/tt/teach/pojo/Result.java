@@ -12,7 +12,7 @@ public class Result implements Serializable {
     private Integer studentNo;
     private Integer subjectNo;
     private Date examDate;
-    private String studentResult;
+    private Integer studentResult;
     private String studentName;
     private String subjectName;
 
@@ -64,18 +64,18 @@ public class Result implements Serializable {
         this.examDate = examDate;
     }
 
-    public String getStudentResult() {
+    public Integer getStudentResult() {
         return studentResult;
     }
 
-    public void setStudentResult(String studentResult) {
+    public void setStudentResult(Integer studentResult) {
         this.studentResult = studentResult;
     }
 
     public Result() {
     }
 
-    public Result(Integer resultNo, Integer studentNo, Integer subjectNo, Date examDate, String studentResult) {
+    public Result(Integer resultNo, Integer studentNo, Integer subjectNo, Date examDate, Integer studentResult) {
         this.resultNo = resultNo;
         this.studentNo = studentNo;
         this.subjectNo = subjectNo;

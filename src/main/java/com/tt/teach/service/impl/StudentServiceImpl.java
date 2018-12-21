@@ -32,4 +32,8 @@ public class StudentServiceImpl implements StudentService {
     public int updateStudent(Student student) {
         return studentDao.updateStudent(student);
     }
+
+    public Student getStuByNo(Integer studentNo) {
+        return studentDao.getStuByNo(studentNo);
+    }
 }
